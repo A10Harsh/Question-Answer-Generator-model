@@ -1,0 +1,167 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  color: #1f1c1c;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Makes sure body takes up the full height of the screen */
+}
+
+header {
+  background-color: #1a1919;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 5px 0;
+  text-align: center;
+  font-size: 16px;
+  height: 80px;
+  color: #ffffff;
+  z-index: 1000; /* Keeps the header on top */
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+main {
+  background-color: #ffffff;
+  color: #3b3434;
+  padding:1px;
+  font-size: 20px;
+  border-radius: 20px;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 120px; /* Gives space for the header */
+  margin-bottom: 200px; /* Ensures space for footer */
+  flex: 1; /* Allows the main content to take the remaining space */
+}
+
+footer {
+  background-color: #ffffff;
+  color: #fff;
+  padding: 0px;
+  
+  font-size: 20px;
+  height: 100px;
+  width: 70%;
+  margin-left: 15%;
+  border-radius: 20px;
+  border: 0.2px solid rgb(34, 32, 32); /* 2px wide, solid style, black color */
+  margin-top: 20px;
+  position: fixed; /* Makes footer relative to the body */
+  bottom: 20px;
+  left: 0;
+  margin-bottom: 0; /* Ensures no extra space is added */
+}
+
+.input-field{
+  width: 96%;
+  padding: 8px;
+  border-radius: 10px;
+  margin: 10px;
+  font-family: 'Roboto', sans-serif; /* Use the custom font */
+  font-size: 18px; /* Set the font size */
+  border: 0px #fff;
+ 
+}
+
+
+
+.input-field-1{
+  width: 19%;
+  padding: 5px;
+  height: 20px;
+  margin-left: 8px;
+  border-radius: 20px;
+  
+  text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 18px; /* Set the font size */
+  
+  
+}
+
+.input-field-2{
+  width: 20%;
+  padding: 5px;
+  height: 35px;
+  margin:3px;
+  border-radius: 20px;
+  border: 0.5px solid #cecece;
+  text-align: center;
+  font-family:  'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 17px; /* Set the font size */
+  font-weight: 50;
+  
+}
+
+.submit-btn {
+  padding: 10px ;
+  font-size: 16px;
+  background-color: #1d1c1c;  
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  position: absolute;
+  right: 2%;
+  bottom: 4%;
+  transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease, padding 0.3s ease; /* Add transition for all properties */
+}
+
+  
+.submit-btn::after {
+  content: '✔'; /* Unicode character for a right arrow */
+  font-size: 18px;
+  margin: 10px; /* Space between the text and the arrow */
+}
+
+.submit-btn:hover {
+  background-color: #ffffff;
+  transition: 4ms;   
+  color:#000000;
+  border: 2px solid #000000;
+  padding:3px;
+  transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease, padding 0.3s ease;
+  
+}
+
+
+
+
+.new-element {
+  margin-top: 10px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  color: #333;
+}
+
+.new-element p {
+  margin: 0;
+}
+
+.response-message {
+  font-size: 18px;
+  color: #333;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  position:relative;
+
+}
+
+
+li {
+  opacity: 0;
+  transition: opacity 3s ease-in-out;
+}
+
+li:nth-child(n) {
+  opacity: 1;
+}
